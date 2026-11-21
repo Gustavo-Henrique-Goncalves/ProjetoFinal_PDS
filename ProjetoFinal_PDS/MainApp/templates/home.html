@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+{% block conteudo %}
+    
+    <section class="section_titulo">
+        <div class="bloco">
+            <h1 class="titulo">
+                Separador de Faixas
+            </h1>
+            <h2 class="subtitulo"> 
+                Envie uma música e separe as faixas harmônicas e percussivas dela.
+            </h2>
+        </div>
+    </section>
+
+    <section class="section_wavesignal">
+        <div id="grafic_wave">
+            {% if messages %}
+                {% for message in messages %}
+                    <p class="texto_mensagem"> <i> {{ message }} </i> </p>  
+                {% endfor %}
+            {% else %}
+                <img src="{% url 'img' %}" alt="">
+            {% endif %}
+        </div>
+    </section>
+
+    <section class="section_arquivo">
+        <div class="bloco">
+            <form class="forms" method="post" enctype="multipart/form-data">  
+                {% csrf_token %}  
+                <input id="file_input" type="file" accept=".mp3,.wav, .ogg" name="arquivo">
+                <button type="submit" id="botao_iniciar">Iniciar</button>
+            </form>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,45 @@
+#cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 50px;
+    background-color: #3f424b;
+    color: white;
+    gap: 20px;
+}   
+
+.titulo_pagina{
+    font-family: 'stalinist one';
+}
+
+.link {
+    text-decoration: none;
+    color: azure;
+    font-size: 20px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    padding: 10px 30px 10px 30px;
+    margin: 20px;
+    border-radius: 30px;
+    border: solid 2px transparent;
+}
+
+.link:hover {
+    border-color: rgb(130, 130, 184);
+    background: linear-gradient(to bottom, #43b8dc, #ff1adc);
+}
+
+.corpo {
+    background-color: #1e2026;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    color: white;
+}
+
+.nav_links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

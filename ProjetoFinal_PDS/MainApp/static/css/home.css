@@ -1,0 +1,70 @@
+.titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+    font-size: 50px;
+}
+
+.section_titulo {
+    margin: 50px 0px 0px 50px;
+    color: azure;
+    display: flex;
+}
+
+.section_arquivo {
+    margin: 20px 50px 0px 50px;
+}
+
+.forms {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#botao_iniciar {
+    padding: 15px 50px 15px 50px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #43b8dc, #ff1adc);
+    color: white;
+    border: solid 0px transparent;
+}
+
+#file_input {
+    margin-bottom: 5px;
+    border-radius: 30px;
+    background-color: #0b0c10;
+    flex-direction: row;
+    flex: 1;
+}
+
+#file_input::file-selector-button {
+    padding: 15px 50px 15px 50px;
+    margin-right: 5px;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #43b8dc, #ff1adc);
+    color: white;
+    border: solid 0px transparent;
+}
+
+.section_wavesignal {
+    display: block;
+    margin: 0px 50px 0px 50px;
+    background-color: #0b0c10;
+}
+
+#grafic_wave {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+#grafic_wave img {
+    width: 100%;
+    height: auto;
+}
+
+.texto_mensagem {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+}
